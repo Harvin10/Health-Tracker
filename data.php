@@ -15,4 +15,8 @@ foreach ($datas as $data) {
     array_push($value, $person);
 }
 
+if (count($value) == 0) {
+    array_push($value, "not found");
+}
+
 echo json_encode($value);
